@@ -105,3 +105,81 @@ a {
     color-scheme: dark;
   }
 }
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 30px 80px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.add-form input {
+  margin: 8px 0px;
+  height: 30px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.add-form button[type="button"] {
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.add-form button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1.04em;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+}
+
+.post {
+  padding-bottom: 50px;
+}
+
+.post h4 {
+  margin-bottom: 10px;
+}
+
+.post p span {
+  font-weight: 800;
+}
+
+.post h5 {
+  margin-top: 20px;
+}
+
+.post > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.post > div a {
+  margin-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.list {
+  width: 900px;
+  max-width: 100vw;
+  padding: 0px 50px;
+}
+
+.list > a > h2 {
+  margin-bottom: 30px;
+}
