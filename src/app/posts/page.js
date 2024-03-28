@@ -1,6 +1,6 @@
 import { Post, AddPostForm } from "@components";
 
-export default async function Posts() {
+const getPosts = async () => {
   const data = await fetch("https://posts-api-yj1i.onrender.com/posts", {
     cache: "no-store",
     headers: {
@@ -8,10 +8,12 @@ export default async function Posts() {
       apikey: process.env.POSTS_API_KEY,
     },
   });
-  const { posts } = await data.json();
+  return await data.json();
+};
 
-  console.log(posts.length);
-  console.log("SERVER: ", process.env.POSTS_API_KEY);
+export default async function Posts() {
+  const { posts } = await getPosts();
+
   return (
     <main className="main">
       <AddPostForm />
