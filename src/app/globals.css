@@ -183,3 +183,8 @@ a {
 .list > a > h2 {
   margin-bottom: 30px;
 }
+
+.post-list {
+  display: flex;
+  flex-direction: column-reverse;
+}
